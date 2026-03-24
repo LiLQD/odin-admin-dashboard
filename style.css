@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 20px;
+
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -57,12 +57,19 @@
     background-color: #fefffe;
     display: grid;
     grid-template-columns: 100px 60% 1fr ;
-    grid-template-rows: 1fr 2fr;
-
+    align-items: center;
 }
 
 .header > *{
     margin: 15px;
+}
+
+.header input[type="search"]{
+    background-color: #e3e8f1;
+    border: none;
+    border-radius: 12px;
+    width: 70%;
+    justify-self: self-start;
 }
 .icon{
     width: 25px;
@@ -71,10 +78,24 @@
 .search{
     grid-column: 1/3;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+
+    justify-items: center;
 }
 .accountSide{
+    margin: 0;
     grid-column: 3;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: 10% 10% 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-self: center;
+}
+.topAvatar{
+    width: 3rem;
+    height: 3rem;
 }
 .userName{
     display: inline;
@@ -82,13 +103,36 @@
 .userInformation{
     grid-column: 2;
     grid-row: 2;
+
 }
 .avatar{
     width: 70px;
     height: 70px;
     grid-column: 1;
     grid-row: 2;
+    margin-left: 30px;
 }
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-self: center;
+    
+}
+.buttons button{
+    appearance: none;
+    background-color: #1993d5;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
 .main-content {
     grid-column: 2;
     grid-row: 2;
