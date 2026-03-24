@@ -137,4 +137,20 @@
     grid-column: 2;
     grid-row: 2;
     background-color: #e3e8f1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3rem 1fr;
+}
+.main-content > *{
+    margin: 20px;
+}
+.yourProjectTitle{
+    grid-row: 1;
+    grid-column: 1;
+
+}
+.announcementsTitle{
+    grid-row: 1;
+    grid-column: 2;
+
 }
